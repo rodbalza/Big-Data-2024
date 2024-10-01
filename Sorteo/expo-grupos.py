@@ -1,7 +1,7 @@
 import random
 
 # Listas de estudiantes por tema
-digital_maturity = ['Edu', 'David', 'Roberto', 'Daniel G']
+digital_maturity = ['Edu', 'David', 'Roberto', 'Daniel G', 'Hugo M']
 data_driven_maturity = ['Sergio P', 'Sergio F', 'Leo', 'Daniel S', 'Sergio S']
 data_science_maturity = ['Christian', 'Daniel M', 'Mario S', 'Pablo', 'Mario M']
 big_data_maturity = ['Andy', 'Alvaro', 'Javier P', 'Alejandro R', 'Marta']
