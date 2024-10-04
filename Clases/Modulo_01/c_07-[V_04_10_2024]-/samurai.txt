@@ -1,0 +1,116 @@
+What is a Shell Samurai?
+A Shell Samurai has an intuitive understanding of the CLI and Linux
+fundamentals. They can navigate the Command Line and configure the Linux
+OS to do their bidding. A Shell Samurai tells computers what to do, not the other
+way around.
+A Shell Samurai does not know everything and never claims to. They are
+resourceful, creative and modest. When an issue pops up that they can’t solve,
+they’re able to finding documentation or resources to push through to victory.
+A Shell Samurai never stops learning. They’re always improving their skills
+and learning more.
+Thank you for joining me and taking the path to becoming a Shell Samurai!
+Let’s learn Linux and kick ass at it together!
+- Stetson Blake
+15
+1. Setting Up a Lab Environment
+Lab Setup Intro
+This book is one that I want you to be able to follow along with, reference and
+use to learn Linux fundamentals more deeply. To assist with that goal, I strongly
+recommend setting up a “Lab Server” to follow along with the commands we’ll
+give. Without a real working Linux system, you’re just kinda reading words and
+hallucinating what a system should behave like. You need to use a real shell and
+feel a little bit of pain and struggle, but then success and mastery. Real lab
+experience like this is your friend.
+I also recommend not using the GUI. Yes, it is a little bit harder to only use a
+CLI, but it is much quicker and most production Linux systems you touch will
+not offer a GUI. If you decide to install Linux on an old computer or laptop that
+has a Window manager, you’ll just need to use the terminal program to follow
+along with the examples.
+Depending on what computers you have access to and use, there’s a few
+options for getting a Linux shell at your disposal. We won’t go deep on every one
+of these options, but we’ll guide you towards victory. A Linux Samurai has to do
+some homework of their own, after all.
+Install Linux on an old Laptop or Desktop computer
+Installing Linux on an old system is a great option to get started using Linux.
+Installing Linux and using it as your daily driver is a great way to dive into the
+deep end. Just be cautious as many newbies may install Linux on their “main
+computer” and then break things beyond repair. This isn’t a big deal because you
+can simply reinstall and the only cost is your time. If you go this route, be sure to
+install Linux on a machine that isn’t your primary computer.
+If you decide to take this path, use Ubuntu Desktop available at Ubuntu.com.
+Grab the latest version, which is currently 22.02.2 LTS. The LTS references
+Long Time Support and means that this edition will be supported for a few years.
+16
+You’ll need a USB drive to install Ubuntu from a bootable disk or if you’re a
+little more old school, you can burn the Ubuntu image to a disc and boot from
+that. Ubuntu has setup instructions for installing on a Bootable USB stick here.
+Use Windows Subsystem for Linux or WSL
+If you’re using Windows 10 or newer, you’re in luck. Windows Subsystem for
+Linux (WSL) is a feature of Windows that allows you to run a Linux environment
+without running a separate virtual machine.
+Windows Subsystem for Linux is probably the easiest way to get a Linux shell
+up quickly, but I don’t totally recommend it because it isn’t a “true” Linux
+system. There are a couple of drawbacks and performance disadvantages. Some
+of the tutorials in this book won’t work 100% correctly if you use WSL and you
+might have to google your way through a few error messages. I think it’s more
+valuable as a beginner to use one of the other options. That said, if you really,
+really want to use WSL…
+Here’s how to get a Linux Shell using WSL:
+• Enable the Windows Subsystem for Linux feature:
+⁃ Open the Start Menu and search for “Turn windows Features on or
+off”
+⁃ Check the box next to “Windows Subsystem for Linux”
+⁃ Click OK and wait for it to install
+⁃ Click Restart Now to restart your computer
+• Open the Start Menu and search for Microsoft Store and Open It
+• Search for Ubuntu
+• Click on Ubuntu and make sure you are using the Ubuntu program put
+out by Canonical Group Limited
+• Click Get
+• Wait for it to Install
+• Click Open
+• WSL will prompt you for a username, go ahead and set one.
+• WSL will ask for a password, you can type one and hit enter. Note that the
+17
+password will not show up on the terminal! This is called blind typing and
+is normal. Enter your password again to confirm.
+• Congrats you should now have your very own Ubuntu terminal up and
+running!
+You can access WSL in a few ways. First, either through the start menu and
+searching for Ubuntu. Then, you can pin it to start or the task bar. The other way
+you can access your shell is by opening Command Prompt or Powershell and
+simply typing ubuntu and hitting enter.
+Check out the Microsoft Documentation for more info on Windows Subsystem
+for Linux.
+Use Virtualization Software
+Another great option is to use software like VirtualBox or VMWare to install a
+Linux system on your laptop or desktop. This option is flexible but requires a
+little bit of configuration and setup. It’s free and lets you customize everything
+you need to and run any ISO image and flavor of Linux. The Virtual Machine is
+segregated from your main computer so you’re free to mess things up and get it
+into a broken state without pain.
+For more info on using VirtualBox, reference the installation docs Ubuntu has
+provided here.
+Dual Boot
+Dual Booting is a way of installing Linux alongside another operating system
+on the same machine. This is a similar route to just installing Linux on a
+computer like I mentioned above. You’ll have to do some partitioning of your
+hard drive and do some other configuration. Due to that, it’s an option, but not a
+very good one in my opinion due to the complexity involved for a newbie.
+Use a Server from A Cloud Host
+18
+This option is my favorite. Today, the “Cloud” is ubiquitous and cheap. For
+many years, you’ve been able to rent someone else’s computer in the form of a
+“VPS” or Virtual Private Server. There are tons of platforms like Digital Ocean,
+Vultr and AWS. Be careful with AWS, because you can really run your bill up if
+you don’t know what you’re doing!
+Point is, any basic Linux server shouldn’t cost more than $5/month. For some
+cloud providers, you can even shut down your server when you aren’t using it
+and just pay for the amount of time it’s turned on! Billing changes constantly, so
+be sure to read your provider’s FAQ and Billing Documentation to be sure.
+If you use this option, be sure to check out the section on SSH in this book as
+that is the primary way you’ll connect to a cloud server! When you install your
+server, be sure to use the latest version of Ubuntu, which is the Linux
+Distribution we’ll use in this book.
+The path you take to get access to a Linux Shell doesn’t matter too much. All
+that matters is that you start and get a basic bash shell up and running.
