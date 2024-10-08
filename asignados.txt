@@ -25,3 +25,30 @@ Alumno 22: T07-01
 Alumno 23: T07-04
 Alumno 24: T07-15
 Alumno 25: T07-06
+
+Asignaciones del día 07-10-2024:
+01 - Carlos Alonso: T07-19
+02 - Samuel Barahoma: T07-02
+03 - Eduardo Corpa: T07-07
+04 - Hugo de Argila: T07-18
+05 - Alvaro Díez: T07-22
+06 - Sergio Ferreras: T07-10
+07 - Marta Fraile: T07-20
+08 - Roberto García: T07-12
+09 - Daniel García: T07-17
+10 - Pablo A Herrera: T07-04
+11 - Victor Hervás: T07-05
+12 - Andy (Tsuen Kit Lui): T07-13
+13 - Miguel Marañón: T07-08
+14 - Mario Martín: T07-25
+15 - Daniel Mellado: T07-09
+16 - Hugo Moreno: T07-21
+17 - Leonardo David: T07-14
+18 - Javier Pérez: T07-11
+19 - Sergio Pulido: T07-16
+20 - Alejandro Rodriguez: T07-06
+21 - David Rubio: T07-01
+22 - Mario Santana: T07-23
+23 - Daniel Serrano: T07-03
+24 - Sergio Simón: T07-24
+25 - Christian Teruel: T07-15
