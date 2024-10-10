@@ -1,0 +1,84 @@
+
+proyecto_data_engineering/
+├── big_data/
+│   ├── config/
+│   │   ├── yarn-site.xml
+│   │   ├── core-site.xml
+│   │   └── spark-defaults.conf
+│   ├── data/
+│   │   ├── ejemplo.parquet
+│   │   └── ejemplo.avro
+│   ├── jobs/
+│   │   ├── spark_job.py
+│   │   └── hadoop_job.sh
+│   └── scripts/
+│       ├── submit_spark_job.sh
+│       └── run_hadoop_job.sh
+├── datos_brutos/
+│   └── ejemplo_datos.csv
+├── datos_procesados/
+│   ├── batch/
+│   │   └── datos_procesados_batch.csv
+│   └── stream/
+│       └── datos_procesados_stream.csv
+├── feature_engineering/
+│   └── script_feature_engineering.py
+├── machine_learning/
+│   ├── entrenamiento_modelo.py
+│   ├── ajuste_hiperparametros.py
+│   ├── evaluacion_modelo.py
+│   ├── pipelines/
+│   │   ├── pipeline_entrenamiento.py
+│   │   ├── pipeline_inferencia.py
+│   │   └── pipeline_despliegue.py
+│   └── generative_ai/
+│       ├── entrenamiento_gan.py
+│       ├── generacion_texto.py
+│       └── generacion_imagenes.py
+├── visualizations/
+│   ├── powerbi/
+│   │   ├── dashboard.pbix
+│   │   └── informes_powerbi.md
+├── docs/
+│   ├── arquitectura.md
+│   └── crisp_dm/
+│       ├── 1_comprension_negocio/
+│       │   └── informe_comprension_negocio.md
+│       ├── 2_comprension_datos/
+│       │   └── informe_comprension_datos.md
+│       ├── 3_preparacion_datos/
+│       │   └── informe_preparacion_datos.md
+│       ├── 4_modelado/
+│       │   └── informe_modelado.md
+│       ├── 5_evaluacion/
+│       │   └── informe_evaluacion.md
+│       └── 6_despliegue/
+│           └── informe_despliegue.md
+├── scripts/
+│   ├── conexion_api.py
+│   ├── conexion_hdfs.py
+│   ├── conexion_sql.py
+│   ├── script_etl_batch.py
+│   ├── script_etl_stream.py
+│   └── script_entrenamiento.py
+├── tests/
+│   └── test_script_etl.py
+├── notebooks/
+│   └── exploracion_datos.ipynb
+├── orquestacion/
+│   └── dag_etl.py
+├── dependencias/
+│   └── requirements.txt
+├── logs/
+│   └── procesamiento.log
+├── configuracion/
+│   ├── config.yaml
+│   └── .env
+├── resultados/
+│   └── resumen_resultados.txt
+├── modelos/
+│   ├── modelo_entrenado.pkl
+│   └── modelo_pre_entrenado.pkl
+├── docker-compose.yml
+├── Makefile
+└── README.md

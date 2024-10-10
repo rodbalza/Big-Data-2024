@@ -1,0 +1,89 @@
+
+### Caso de Uso: "Automatización en DataCorp"
+
+DataCorp es una empresa que gestiona datos provenientes de distintas fuentes para su análisis y almacenamiento en un entorno de Big Data. Para mejorar la eficiencia, necesitan scripts en Bash que automaticen las tareas diarias de administración de archivos y gestión de usuarios. Los estudiantes deberán crear scripts que cubran tareas como la creación de directorios, copias de seguridad, configuración de permisos y gestión de usuarios, entre otros.
+
+### Ejercicios Basados en el Caso Real
+
+1. **Ejercicio 1: Creación de Directorios para la Ingesta de Datos**
+   - DataCorp recibe datos diariamente desde distintas fuentes. Crea un script que automatice la creación de directorios llamados `ingesta/<fecha>` con la fecha actual en formato `YYYY-MM-DD`, donde se almacenarán los datos del día. El script debe ejecutarse cada día antes de la llegada de los datos.
+
+2. **Ejercicio 2: Copia de Seguridad Automática**
+   - Los archivos de datos procesados deben ser respaldados antes de ser archivados. Crea un script que copie todos los archivos de la carpeta `procesados/` a una carpeta llamada `backup/`, y añade la fecha actual al nombre del archivo para evitar sobreescrituras.
+
+3. **Ejercicio 3: Mover Archivos por Tamaño**
+   - Los archivos que superan los 100 MB deben ser movidos automáticamente a un directorio llamado `grandes/`, y los menores de 100 MB deben ser movidos a `pequeños/`. Crea un script que automatice esta tarea.
+
+4. **Ejercicio 4: Creación de Usuarios del Equipo de Análisis**
+   - Cada miembro del equipo de análisis necesita una cuenta en el sistema. Crea un script que lea una lista de nombres de usuarios desde un archivo de texto (`usuarios.txt`) y cree esos usuarios en el sistema con sus respectivos directorios de inicio.
+
+5. **Ejercicio 5 Modificado: Configuración de Permisos para Grupos de Usuarios en DataCorp**
+   - DataCorp tiene seis grupos de usuarios:
+     - **Analistas**
+     - **Ingenieros**
+     - **Administradores**
+     - **Científicos de Datos**
+     - **Ingenieros de Machine Learning (ML)**
+     - **Ingenieros de AI**
+
+   Cada grupo tiene diferentes niveles de acceso a los datos y scripts en el sistema. El ejercicio consiste en crear un script que configure los permisos para cada grupo de la siguiente manera:
+
+   1. **Grupo "Analistas"**:
+      - Solo debe tener permisos de lectura en el directorio `ingesta/`.
+      - No debe tener acceso al directorio `scripts/` ni a los datos procesados.
+
+   2. **Grupo "Ingenieros"**:
+      - Debe tener permisos de lectura y escritura en el directorio `procesados/` para poder trabajar con los datos transformados.
+      - También debe tener permisos de lectura en `scripts/` para ver los scripts que ejecutan los procesos de ETL.
+
+   3. **Grupo "Administradores"**:
+      - Debe tener todos los permisos (lectura, escritura, ejecución) en todos los directorios (`ingesta/`, `procesados/`, `scripts/`, etc.).
+
+   4. **Grupo "Científicos de Datos"**:
+      - Debe tener permisos de lectura y escritura en el directorio `datos_procesados/` para acceder a los datos limpios.
+      - Permisos de lectura y escritura en `notebooks/` para desarrollar análisis y modelos.
+      - Permisos de lectura en `logs/` para revisar errores o mensajes importantes.
+
+   5. **Grupo "Ingenieros de ML"**:
+      - Debe tener permisos de lectura y escritura en el directorio `machine_learning/` para el desarrollo y ajuste de modelos.
+      - Permisos de ejecución en `scripts/` para ejecutar scripts de entrenamiento.
+      - Permisos de lectura y escritura en `modelos/` para almacenar y modificar los modelos.
+
+   6. **Grupo "Ingenieros de AI"**:
+      - Debe tener permisos de lectura, escritura y ejecución en `machine_learning/generative_ai/` para desarrollar soluciones de IA generativa.
+      - Permisos de lectura y escritura en `visualizations/` para colaborar con la visualización de resultados de modelos generativos.
+      - Permisos de lectura en `docs/crisp_dm/` para revisar documentación de las fases del proyecto.
+
+   **Tarea**:
+   Crea un script en Bash que configure los permisos indicados para cada grupo. El script debe crear los grupos si no existen y aplicar los permisos recursivamente a los directorios especificados.
+
+6. **Ejercicio 6: Rotación de Logs**
+   - Los logs de la aplicación se generan diariamente y deben ser archivados. Crea un script que mueva los archivos de log que tienen más de 7 días a un directorio llamado `logs/archivados/` y elimine los archivos de log que tienen más de 30 días.
+
+7. **Ejercicio 7: Compresión Automática de Archivos Antiguos**
+   - Para optimizar el almacenamiento, todos los archivos de la carpeta `archivos/` que no han sido modificados en los últimos 90 días deben ser comprimidos automáticamente en un archivo `.tar.gz`. Crea un script para realizar esta tarea.
+
+8. **Ejercicio 8: Envío Automático de Archivos por FTP**
+   - DataCorp necesita enviar un informe diario a un servidor remoto mediante FTP. Crea un script que conecte con el servidor FTP y transfiera los archivos del directorio `informes/` generados el día anterior.
+
+9. **Ejercicio 9: Resumen Automático de Archivos en un Directorio**
+   - Crea un script que genere un informe con la cantidad total de archivos, el tamaño acumulado y el número de archivos de cada tipo (por extensión) en el directorio `datos/`.
+
+10. **Ejercicio 10: Búsqueda de Palabras Clave en Archivos de Log**
+    - Crea un script que busque una palabra clave dada en los archivos de log del directorio `logs/` y devuelva las líneas que contienen dicha palabra. El script debe aceptar la palabra clave como un argumento.
+
+11. **Ejercicio 11: Cambio de Propietario y Permisos Recursivos**
+    - El propietario de los archivos en la carpeta `datos_compartidos/` ha cambiado, por lo que es necesario actualizar el propietario y los permisos recursivamente para todo el directorio. Crea un script para automatizar esta tarea.
+
+12. **Ejercicio 12: Sincronización de Directorios entre Servidores**
+    - DataCorp tiene un servidor secundario que actúa como respaldo. Crea un script que sincronice el contenido del directorio `datos/` en el servidor principal con el directorio correspondiente en el servidor secundario utilizando `rsync`.
+
+13. **Ejercicio 13: Verificación de Espacio en Disco y Alerta**
+    - Crea un script que verifique el uso del disco. Si el uso supera el 80%, el script debe enviar una alerta por correo electrónico al administrador del sistema.
+
+14. **Ejercicio 14: Programación de Tareas con `cron`**
+    - DataCorp necesita que algunas tareas se ejecuten automáticamente en horarios específicos. Crea un script que programe un trabajo con `cron` para ejecutar un script de respaldo todos los días a las 2:00 AM.
+
+15. **Ejercicio 15: Validación de Integridad de Archivos con `md5sum`**
+    - Antes de procesar los archivos, DataCorp necesita asegurarse de que no han sido modificados. Crea un script que calcule el `md5sum` de cada archivo en el directorio `ingesta/` y lo compare con un archivo de referencia para validar su integridad.
+
