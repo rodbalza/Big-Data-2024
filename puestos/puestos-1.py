@@ -26,7 +26,7 @@ alumnos = {
     '22': 'Mario Santana',
     '23': 'Daniel Serrano',
     '24': 'Sergio Simón',
-    '25': 'Christian Teruel'
+    '26': 'Ana Cristina Borja'
 }
 
 # Lista de ordenadores T07-01 al T07-25
