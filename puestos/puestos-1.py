@@ -44,7 +44,7 @@ for i, (numero, nombre) in enumerate(alumnos.items()):
     asignaciones[f'{numero} - {nombre}'] = ordenadores[i]
 
 # Imprimir las asignaciones
-print(f"Asignaciones para el día {fecha_hoy}:")
+print(f"Asignaciones de puestos para el día {fecha_hoy}:")
 for alumno, ordenador in asignaciones.items():
     print(f"{alumno}: {ordenador}")
 
