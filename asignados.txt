@@ -106,3 +106,30 @@ Asignaciones del día 21-10-2024:
 23 - Daniel Serrano: T07-02
 24 - Sergio Simón: T07-15
 26 - Ana Cristina Borja: T07-11
+
+Asignaciones del día 28-10-2024:
+01 - Carlos Alonso: T07-10
+02 - Samuel Barahoma: T07-21
+03 - Eduardo Corpa: T07-20
+04 - Hugo de Argila: T07-23
+05 - Alvaro Díez: T07-19
+06 - Sergio Ferreras: T07-01
+07 - Marta Fraile: T07-24
+08 - Roberto García: T07-15
+09 - Daniel García: T07-18
+10 - Pablo A Herrera: T07-25
+11 - Victor Hervás: T07-09
+12 - Andy (Tsuen Kit Lui): T07-13
+13 - Miguel Marañón: T07-05
+14 - Mario Martín: T07-16
+15 - Daniel Mellado: T07-06
+16 - Hugo Moreno: T07-02
+17 - Leonardo David: T07-11
+18 - Javier Pérez: T07-22
+19 - Sergio Pulido: T07-04
+20 - Alejandro Rodriguez: T07-17
+21 - David Rubio: T07-08
+22 - Mario Santana: T07-03
+23 - Daniel Serrano: T07-12
+24 - Sergio Simón: T07-14
+26 - Ana Cristina Borja: T07-07
