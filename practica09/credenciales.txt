@@ -1,0 +1,9 @@
+credenciales sql database:
+login: admin01
+pass: admin_01
+
+
+credenciales del cluster:
+
+login: admin01
+password: Cluster_01
